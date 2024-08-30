@@ -108,3 +108,101 @@
     .abt-the-book p {
         font-size: 16px;
     }
+
+
+    /*Cart css*/
+
+
+.cart-section {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.cart-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.cart-title {
+    font-weight: 700;
+    text-align: center !important;
+    padding-bottom: 25px;
+}
+
+.cart-image {
+    height: 200px;
+    width: 130px;
+}
+
+.cart-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clear-cart {
+    text-align: right;
+    padding-bottom:10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: right;
+    color: #4b4a4c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-item-card {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.cart-item-details {
+    width: 400px;
+}
+
+.cart-item-details h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+    .cart-item-details h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cart-item-details h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+.close-btn i {
+    font-size: 24px;
+}
+
+.cart-price p {
+    font-size: 14px;
+}
+
+.proceed-to-buy {
+    display: flex;
+    justify-content: right;
+}
+
+.proceed-to-buy a {
+    text-decoration: none;
+    color: white !important;
+    background: #0052cd;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

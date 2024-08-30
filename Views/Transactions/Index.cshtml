@@ -25,3 +25,44 @@
 </table>
 
 <a href="@Url.Action("Create")" class="btn btn-primary">New Transaction</a>
+
+@*
+    @model IEnumerable<BookStoreTry.Models.Books>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="home-section">
+    <div class="cart-section">
+        <h1 class="cart-title">My Cart</h1>
+        <div class ="cart-container">
+            <a class="clear-cart">clear cart</a>
+            <div class="cart-item-card">
+                <div class="cart-image">
+                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" />
+                </div>
+                <div class="cart-item-details">
+                    <h1>Book Title</h1>
+                    <h2>By Author Name</h2>
+                    <h3>Book </h3>
+                </div>
+                <p class="qty">
+                    Qty: 1
+                </p>
+                <div class="cart-price">
+                    <h3>₹699</h3>
+                    <p>inc. 18% GST</p>
+                </div>
+                <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="proceed-to-buy">
+                <a>Proceed to Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+*@
