@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<BookStoreTry.Models.Books>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -69,78 +71,20 @@
                 <p>(50 Books Found)</p>
             </div>
             <div class="book-card-container">
+                @foreach (var book in Model) {
                 <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
+                    <img src=@book.ImageUrl alt="book" />
                     <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
+                            <h5>@book.Title</h5>
+                        <p>By @book.Author</p>
+                        <p>ISBN @book.ISBN</p>
+                        <h6>Price: @book.Price</h6>
                     </div>
                     <div class="view-more-btn">
                         <a>View More</a>
                     </div>
                 </div>
-                <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
-                    <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
-                    </div>
-                    <div class="view-more-btn">
-                        <a>View More</a>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
-                    <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
-                    </div>
-                    <div class="view-more-btn">
-                        <a>View More</a>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
-                    <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
-                    </div>
-                    <div class="view-more-btn">
-                        <a>View More</a>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
-                    <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
-                    </div>
-                    <div class="view-more-btn">
-                        <a>View More</a>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" alt="book" />
-                    <div class="book-details">
-                        <h5>Chainsaw Man, Vol. 4</h5>
-                        <p>By Tatsuki Fujimoto</p>
-                        <p>4.1/5 Stars</p>
-                        <h6>Price: ₹500/-</h6>
-                    </div>
-                    <div class="view-more-btn">
-                        <a>View More</a>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>
