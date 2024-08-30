@@ -1,0 +1,110 @@
+﻿.book-summary-view {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.book-image-summary {
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.book-image-summary img {
+    width: 100%;
+    height: 100%
+}
+
+.book-summary-view {
+    display: flex;
+}
+.book-max-details {
+    padding-left: 100px;
+}
+
+.book-max-details h1 {
+    font-size: 28px;
+    color: #ed0000;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+    .book-max-details p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+.book-price-container h3 {
+    font-size: 28px;
+}
+
+.book-price-container h2 {
+    font-size: 24px;
+}
+
+.book-price-container h5 {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.book-price-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.book-btn-container {
+    margin-left: 50px;
+
+}
+
+.buy-btn {
+    background: #009613;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.atc-btn {
+    background: #ff9000;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.book-features-container {
+    display: flex;
+    align-items: center;
+}
+
+.features-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+.corner-div i {
+    font-size: 22px;
+}
+
+.book-btn-container-new {
+    margin-top: 20px;
+}
+.abt-the-book {
+    width : 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.abt-the-book h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ed0000;
+}
+
+    .abt-the-book p {
+        font-size: 16px;
+    }

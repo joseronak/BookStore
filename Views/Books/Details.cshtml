@@ -1,0 +1,70 @@
+﻿@model IEnumerable<BookStoreTry.Models.Books>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="home-section">
+    <div class="book-container">
+        <div class="book-summary-view">
+            <div class="book-image-summary">
+                <img src="https://www.bookswagon.com/productimages/images200/279/9781974717279.jpg" />
+            </div>
+            <div class="book-max-details">
+                <h1>Book Tile</h1>
+                <p>Book Author</p>
+                <div class="book-price-btn-container">
+                    <div class="book-price-container">
+                        <h3>₹</h3>
+                        <h2>MRP: <s>₹500</s></h2>
+                        <h5>Save: ₹</h5>
+                    </div>
+
+                </div>
+                <div class="book-features-container">
+                    <div class="corner-div">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="features-card">
+                        <p>Pages</p>
+                        <i class="fa-regular fa-file-lines"></i>
+                        <p>81</p>
+                    </div>
+                    <div class="features-card">
+                        <p>ISBN</p>
+                        <i class="fa-solid fa-barcode"></i>
+                        <p>5464646</p>
+                    </div>
+                    <div class="features-card">
+                        <p>Language</p>
+                        <i class="fa-solid fa-language"></i>
+                        <p>5464646</p>
+                    </div>
+                    <div class="features-card">
+                        <p>DOP</p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>5464646</p>
+                    </div>
+                    <div class="features-card">
+                        <p>Review</p>
+                        <i class="fa-regular fa-comments"></i>
+                        <p>30+</p>
+                    </div>
+                    <div class="corner-div">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                </div>
+                <div class="book-btn-container-new">
+                    <button class="buy-btn">Buy Now</button>
+                    <button class="atc-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="abt-the-book">
+            <h1>About the Book</h1>
+            <p>About the Book</p>
+        </div>
+
+    </div>
+</div>
